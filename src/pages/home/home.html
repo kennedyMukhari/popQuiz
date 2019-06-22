@@ -1,0 +1,53 @@
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Special+Elite&display=swap');
+</style>
+<ion-header>
+  <ion-navbar>
+    <ion-title style="text-align: center">
+      PopQuiz<ion-icon name="bulb"></ion-icon>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="container">
+    <div class="box-1" style="text-align: center">
+      <h1 style="font-family: 'Special Elite', cursive;color:aquamarine;text-shadow: 2px 2px teal"> Take your Quiz
+        today!
+      </h1>
+    </div>
+  </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col width-100>
+        <ion-list>
+          <ion-item style="background-color: transparent;border: none">
+            <button style="height: 50px" ion-button block>
+              <h1 style="font-family: 'Special Elite', cursive;" (click)="goToHistoryPage()">History</h1>
+            </button>
+          </ion-item>
+          <ion-item style="background-color: transparent;border: none">
+            <button style="height: 50px" ion-button block>
+              <h1 style="font-family: 'Special Elite', cursive;" (click)="goToSciencePage()">Science</h1>
+            </button>
+          </ion-item>
+          <ion-item style="background-color: transparent;border: none">
+            <button style="height: 50px" ion-button block>
+              <h1 style="font-family: 'Special Elite', cursive;" (click)="goToPoliticsPage()">Politics</h1>
+            </button>
+          </ion-item>
+          <ion-item style="background-color: transparent;border: none">
+            <button style="height: 50px" ion-button block>
+              <h1 style="font-family: 'Special Elite', cursive;" (click)="goToBusinessPage()">Mathematics</h1>
+            </button>
+          </ion-item>
+          <ion-item style="background-color: transparent;border: none">
+            <button style="height: 50px" ion-button block>
+              <h1 style="font-family: 'Special Elite', cursive;" (click)="goToSoccerPage()">Soccer</h1>
+            </button>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

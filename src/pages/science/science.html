@@ -1,0 +1,202 @@
+<!--
+  Generated template for the SciencePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Science And Technology</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides paginationType="progress" #slides pager>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-list>
+              <ion-item>
+                <ion-label>
+                  Who started the tech company Huawei?
+                </ion-label>
+              </ion-item>
+            </ion-list>
+            <ion-list radio-group>
+
+              <ion-item>
+                <ion-label>A. Ren Zhengfei</ion-label>
+                <ion-radio (click)="companyClicked();next()" value="Mandela"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>B. Steve jobs</ion-label>
+                <ion-radio (click)="next()" value="Zuma"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>C. Bill Gates</ion-label>
+                <ion-radio (click)="next()" value="Mbeki"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>D. Larry page</ion-label>
+                <ion-radio (click)="next()" value="DeKlerk"></ion-radio>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-list>
+              <ion-item>
+                <ion-label>
+                  Who is the CEO of Facebook?
+                </ion-label>
+              </ion-item>
+            </ion-list>
+            <ion-list radio-group>
+
+              <ion-item>
+                <ion-label>A. Bill Gates</ion-label>
+                <ion-radio (click)="next()" value="Mandela"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>B. Jeff Beezos</ion-label>
+                <ion-radio (click)="next()" value="Zuma"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>C. Vladmir Putin</ion-label>
+                <ion-radio (click)="next()" vaue="Mbeki"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>D. Mark Elliot Zuckerberg</ion-label>
+                <ion-radio (click)="ceoClicked;next()" value="DeKlerk"></ion-radio>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-list>
+              <ion-item>
+                <ion-label>
+                  Which country is ahead on 5G technology?
+                </ion-label>
+              </ion-item>
+            </ion-list>
+            <ion-list radio-group>
+
+              <ion-item>
+                <ion-label>A. United States Of Amerioca</ion-label>
+                <ion-radio (click)="next()" value="Mandela"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>B. South Africa</ion-label>
+                <ion-radio (click)="next()" value="Zuma"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>C. China</ion-label>
+                <ion-radio (click)="countryClicked();next()" vaue="Mbeki"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>D. Germany</ion-label>
+                <ion-radio (click)="next()" value="DeKlerk"></ion-radio>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-list>
+              <ion-item>
+                <ion-label>
+                  Which tech company is already deploying 5G?
+                </ion-label>
+              </ion-item>
+            </ion-list>
+            <ion-list radio-group>
+
+              <ion-item>
+                <ion-label>A. Google</ion-label>
+                <ion-radio (click)="next()" value="Mandela"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>B. Huawei.</ion-label>
+                <ion-radio (click)="huaweiClicked();next()" value="Zuma"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>C. Microsoft.</ion-label>
+                <ion-radio (click)="next()" vaue="Mbeki"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>D. Qualcomm.</ion-label>
+                <ion-radio (click)="next()" value="DeKlerk"></ion-radio>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-list>
+              <ion-item>
+                <ion-label>
+                  In which country was Microsoft invented?
+                </ion-label>
+              </ion-item>
+            </ion-list>
+            <ion-list radio-group>
+
+              <ion-item>
+                <ion-label>A. France.</ion-label>
+                <ion-radio (click)="next()" value="Mandela"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>B. DRC congo.</ion-label>
+                <ion-radio (click)="next()" value="Zuma"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>C. United States Of America.</ion-label>
+                <ion-radio (click)="inventClicked()" vaue="Mbeki"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>D. Zimbabwe.</ion-label>
+                <ion-radio (click)="next()" value="DeKlerk"></ion-radio>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <button ion-button (click)="submit();gotToDisplay()" block>Submit</button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

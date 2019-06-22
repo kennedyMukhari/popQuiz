@@ -1,0 +1,200 @@
+<!--
+  Generated template for the HistoryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>history</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-slides paginationType="progress" #slides pager>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-list>
+              <ion-item>
+                <ion-label>
+                  Who is the first black president?
+                </ion-label>
+              </ion-item>
+            </ion-list>
+            <ion-list radio-group>
+
+              <ion-item>
+                <ion-label>A. Nelson Rolihlahla Mandela</ion-label>
+                <ion-radio (click)="madelaClicked();next()" value="Mandela"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>B. Jacob Gedleyihlekisa Zuma</ion-label>
+                <ion-radio (click)="next()" value="Zuma"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>C. Thabo Mvuyelwa Mbeki</ion-label>
+                <ion-radio (click)="next()" value="Mbeki"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>D. Frederik Willem de Klerk</ion-label>
+                <ion-radio (click)="next()" value="DeKlerk"></ion-radio>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-list>
+              <ion-item>
+                <h3>
+                  Who is the last white president of south africa?
+                </h3>
+              </ion-item>
+            </ion-list>
+            <ion-list radio-group>
+
+              <ion-item>
+                <ion-label>A. Roelof Frederik "Pik" Botha</ion-label>
+                <ion-radio (click)="next()" value="Mandela"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>B. Daniel François "DF" Malan</ion-label>
+                <ion-radio (click)="next()" value="Zuma"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>C. Jan Christiaan Smuts</ion-label>
+                <ion-radio (click)="next()" vaue="Mbeki"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>D. Frederik Willem de Klerk</ion-label>
+                <ion-radio (click)="deKlerkClicked();next()" value="DeKlerk"></ion-radio>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-list>
+              <ion-item>
+                <h3>
+                  When was mandela arrested and imprisoned?
+                </h3>
+              </ion-item>
+            </ion-list>
+            <ion-list radio-group>
+
+              <ion-item>
+                <ion-label>A. arrested and imprisoned in 1962</ion-label>
+                <ion-radio (click)="arrested1962();next()" value="Mandela"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>B. arrested and imprisoned in 1964</ion-label>
+                <ion-radio (click)="next()" value="Zuma"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>C. arrested and imprisoned in 1994</ion-label>
+                <ion-radio (click)="next()" vaue="Mbeki"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>D. arrested and imprisoned in 2000</ion-label>
+                <ion-radio (click)="next()" value="DeKlerk"></ion-radio>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-list>
+              <ion-item>
+                <ion-label>
+                  What prison(s) was Nelson Mandela held in?
+                </ion-label>
+              </ion-item>
+            </ion-list>
+            <ion-list radio-group>
+
+              <ion-item>
+                <ion-label>A. Robben Island</ion-label>
+                <ion-radio (click)="imprisoned();next()" value="Mandela"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>B. Grootvlei Prison.</ion-label>
+                <ion-radio (click)="next()" value="Zuma"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>C. Leeuwkop Max C Prison.</ion-label>
+                <ion-radio (click)="next()" vaue="Mbeki"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>D. Drakenstein Medium B Prison.</ion-label>
+                <ion-radio (click)="next()" value="DeKlerk"></ion-radio>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-slide>
+    <ion-slide>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-list>
+              <ion-item>
+                <ion-label>What was Robben Island used for during apartheid era?</ion-label>
+              </ion-item>
+            </ion-list>
+            <ion-list radio-group>
+
+              <ion-item>
+                <ion-label>A. Luxury Accomodation.</ion-label>
+                <ion-radio value="Mandela"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>B. Court of Law.</ion-label>
+                <ion-radio value="Zuma"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>C. President's residential home.</ion-label>
+                <ion-radio vaue="Mbeki"></ion-radio>
+              </ion-item>
+
+              <ion-item>
+                <ion-label>D. maximum-security prison.</ion-label>
+                <ion-radio (click)="prisonClicked()" value="DeKlerk"></ion-radio>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      <button ion-button (click)="submit();goToDisplay()" block>Submit</button>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
