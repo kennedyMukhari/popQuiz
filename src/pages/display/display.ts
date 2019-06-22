@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the DisplayPage page.
@@ -22,6 +23,10 @@ export class DisplayPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DisplayPage');
+  }
+
+  goToHomePage() {
+    this.navCtrl.push(HomePage);
   }
 
 }
